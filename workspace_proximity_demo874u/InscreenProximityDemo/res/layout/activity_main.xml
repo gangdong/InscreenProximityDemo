@@ -1,0 +1,615 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.atmel.inscreenproximitydemo.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+   <LinearLayout
+        android:id="@+id/toparealayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Maxtouch Information"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/familyIdLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Family ID"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextFamilyID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Variant"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextVariant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Version"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Build"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextBuild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Matrix X Size"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextXSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Matrix Y Size"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextYSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Objects"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextObjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Checksum"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextChecksum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+            
+    
+     <EditText
+            android:id="@+id/editTextLogo9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+       
+            android:background="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:text="Proximity Signal"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTextProximity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:enabled="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/middlearealayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/startbutton_style"
+        android:textColor="#ffffff"
+        android:text="Start Demo" />
+    
+      
+        
+</LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/bottomarealayout"
+            android:layout_height="fill_parent"
+            
+            android:gravity="bottom"
+            
+            
+            android:orientation="vertical" >
+
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Prox Abs Threshold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextProxAbsThreshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Prox Threshold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextProxThreshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Prox Confidence"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextProxConfidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+            
+            
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Hover X Threshold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextHoverXThreshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Hover Y Threshold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextHoverYThreshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Hysteresis"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextHysteresis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Detect Mode"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextDetectMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+            
+            
+           <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextLogo16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:text="Edge Suppression"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextEdgeSuppression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="#0088cc"
+                android:textSize="15sp" />
+        </LinearLayout>
+            
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/settingbutton_style"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Settings"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/settingbutton_style"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="About"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    
+
+</LinearLayout>

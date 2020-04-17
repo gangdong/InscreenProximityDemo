@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\david.dong\workspace_proximity_demo874u\.metadata\.plugins\org.eclipse.jdt.core
+279269491.index
+888236684.index
+2269323561.index

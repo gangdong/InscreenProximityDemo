@@ -1,0 +1,8 @@
+16:55:47 **** Incremental Build of configuration Default for project InscreenProximityDemo ****
+"D:\\eclipse_android\\android-ndk-r10d\\ndk-build.cmd" all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module MaxtouchJni    
+Android NDK:   LOCAL_LDLIBS := -llog    
+[armeabi] Install        : libMaxtouchJni.so => libs/armeabi/libMaxtouchJni.so
+
+16:55:50 Build Finished (took 3s.77ms)
+

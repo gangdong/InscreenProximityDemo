@@ -1,0 +1,13 @@
+1427691654466	Delete element
+1427691976193	Rename field 'rawDelta'
+1427692017763	Rename method 'getRawDelta'
+1427692036226	Rename method 'setRawDelta'
+1427693003003	Rename method 'findAbsSumOnSEDelta'
+1427693334536	Rename method 'findSumOnSEDelta'
+1427694365829	Rename method 'findIndexOverThresholdOnSeDelta'
+1427797016610	Rename method 'readAllSelfDelta'
+1427797490754	Rename field 'isReadAllSelfDeltaDone'
+1427804065215	Rename field 'absSum'
+1427804084664	Rename field 'sum'
+1427804433294	Rename field 'absHoverSum'
+1427804457677	Rename field 'hoverSum'

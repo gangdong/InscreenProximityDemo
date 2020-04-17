@@ -1,0 +1,14 @@
+1424176737379	Delete element
+1424176744680	Delete element
+1424177202349	Rename type 'MutualRawData'
+1424177232593	Rename type 'MutualRawDelta'
+1424178940579	Rename field 'readMutualDeltaCmd'
+1424179441913	Rename field 'backupCmd'
+1424179489069	Rename field 'byteBackup1'
+1424179499659	Rename field 'byteBackup2'
+1424179508786	Rename field 'byteBackup3'
+1424182789598	Rename type 'T37DataHandler'
+1424182803744	Rename type 'T6Command'
+1424348526890	Delete element
+1424365116304	Rename type 'PrintUtility'
+1424365308302	Move compilation unit

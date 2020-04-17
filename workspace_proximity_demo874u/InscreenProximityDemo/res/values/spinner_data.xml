@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnername">
+        <item>full screen</item>
+        <item>top half screen</item>
+        <item>bottom half screen</item>
+    </string-array>
+    
+</resources>
